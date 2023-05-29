@@ -14,25 +14,25 @@ int main()
     scanf("%lf", &digit2);
 
     printf("Enter symbol (+ _ * /): ");
-    scanf("%c", &symbol);
+    scanf(" %c", &symbol);
     
     switch(symbol)
     {
         case '+':
             result = digit1 + digit2;
-            printf("Equals to : %lf\n", result);
+            printf("Equals to : %.1f\n", result);
             break;
         case '-':
             result = digit1 - digit2;
-            printf("Equals to : %lf\n", result);
+            printf("Equals to : %.1f\n", result);
             break;
         case '*':
             result = digit1 * digit2;
-            printf("Equals to : %lf\n", result);
+            printf("Equals to : %.1f\n", result);
             break;
         case '/':
             result = digit1 / digit2;
-            printf("Equals to : %lf \n", result);
+            printf("Equals to : %.1f \n", result);
             break;
         default:
             printf("Syntax Error");
